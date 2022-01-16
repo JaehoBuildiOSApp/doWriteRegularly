@@ -9,23 +9,59 @@
 /* Begin PBXBuildFile section */
 		03462023276C25BD00B2C315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03462022276C25BD00B2C315 /* AppDelegate.swift */; };
 		03462025276C25BD00B2C315 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03462024276C25BD00B2C315 /* SceneDelegate.swift */; };
-		03462027276C25BD00B2C315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03462026276C25BD00B2C315 /* ViewController.swift */; };
-		0346202A276C25BD00B2C315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03462028276C25BD00B2C315 /* Main.storyboard */; };
 		0346202D276C25BD00B2C315 /* doWriteRegularly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0346202B276C25BD00B2C315 /* doWriteRegularly.xcdatamodeld */; };
 		0346202F276C25C300B2C315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0346202E276C25C300B2C315 /* Assets.xcassets */; };
 		03462032276C25C300B2C315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03462030276C25C300B2C315 /* LaunchScreen.storyboard */; };
+		03462090276C6FC100B2C315 /* WritingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346208F276C6FC100B2C315 /* WritingModel.swift */; };
+		03462093276C6FCD00B2C315 /* WritingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03462092276C6FCD00B2C315 /* WritingFunction.swift */; };
+		03462096276C713C00B2C315 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03462095276C713C00B2C315 /* Data.swift */; };
+		0346209C276C7BFF00B2C315 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0346209B276C7BFF00B2C315 /* WritingViewController.swift */; };
+		0346209F276C7C0B00B2C315 /* WritingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0346209E276C7C0B00B2C315 /* WritingViewController.storyboard */; };
+		034620A7276C858E00B2C315 /* WritingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034620A6276C858E00B2C315 /* WritingTableViewCell.swift */; };
+		035F7D1D276D867E009BD9FC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035F7D1C276D867D009BD9FC /* UIViewExtensions.swift */; };
+		035F7D21276D8862009BD9FC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035F7D20276D8862009BD9FC /* Theme.swift */; };
+		035F7D27276D8970009BD9FC /* BinggraeSamanco-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 035F7D23276D896E009BD9FC /* BinggraeSamanco-Bold.ttf */; };
+		035F7D28276D8970009BD9FC /* BinggraeSamanco.otf in Resources */ = {isa = PBXBuildFile; fileRef = 035F7D24276D896F009BD9FC /* BinggraeSamanco.otf */; };
+		035F7D29276D8970009BD9FC /* BinggraeSamanco-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 035F7D25276D896F009BD9FC /* BinggraeSamanco-Bold.otf */; };
+		035F7D2A276D8970009BD9FC /* BinggraeSamanco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 035F7D26276D8970009BD9FC /* BinggraeSamanco.ttf */; };
+		035F7D2D276D8E81009BD9FC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035F7D2C276D8E81009BD9FC /* Colors.xcassets */; };
+		0374DD242770566A00216458 /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374DD232770566A00216458 /* AppUIButton.swift */; };
+		0374DD272770585B00216458 /* selectDaysUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374DD262770585B00216458 /* selectDaysUIButton.swift */; };
+		03907FDE276F092200CE3EFB /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03907FDD276F092200CE3EFB /* UIButtonExtension.swift */; };
+		03907FE2276F0C8300CE3EFB /* AddWritingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03907FE1276F0C8300CE3EFB /* AddWritingViewController.storyboard */; };
+		03907FE6276F0CBE00CE3EFB /* AddWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03907FE5276F0CBE00CE3EFB /* AddWritingViewController.swift */; };
+		03C3AA9C279375FD00CA7FAF /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3AA9B279375FD00CA7FAF /* NotesViewController.swift */; };
+		03C3AAA0279405CD00CA7FAF /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3AA9F279405CC00CA7FAF /* NoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0346201F276C25BD00B2C315 /* doWriteRegularly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doWriteRegularly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03462022276C25BD00B2C315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03462024276C25BD00B2C315 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03462026276C25BD00B2C315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03462029276C25BD00B2C315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0346202C276C25BD00B2C315 /* doWriteRegularly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = doWriteRegularly.xcdatamodel; sourceTree = "<group>"; };
 		0346202E276C25C300B2C315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03462031276C25C300B2C315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03462033276C25C300B2C315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0346208F276C6FC100B2C315 /* WritingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingModel.swift; sourceTree = "<group>"; };
+		03462092276C6FCD00B2C315 /* WritingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingFunction.swift; sourceTree = "<group>"; };
+		03462095276C713C00B2C315 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0346209B276C7BFF00B2C315 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
+		0346209E276C7C0B00B2C315 /* WritingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WritingViewController.storyboard; sourceTree = "<group>"; };
+		034620A6276C858E00B2C315 /* WritingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingTableViewCell.swift; sourceTree = "<group>"; };
+		035F7D1C276D867D009BD9FC /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		035F7D20276D8862009BD9FC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		035F7D23276D896E009BD9FC /* BinggraeSamanco-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinggraeSamanco-Bold.ttf"; sourceTree = "<group>"; };
+		035F7D24276D896F009BD9FC /* BinggraeSamanco.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BinggraeSamanco.otf; sourceTree = "<group>"; };
+		035F7D25276D896F009BD9FC /* BinggraeSamanco-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinggraeSamanco-Bold.otf"; sourceTree = "<group>"; };
+		035F7D26276D8970009BD9FC /* BinggraeSamanco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BinggraeSamanco.ttf; sourceTree = "<group>"; };
+		035F7D2C276D8E81009BD9FC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0374DD232770566A00216458 /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
+		0374DD262770585B00216458 /* selectDaysUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectDaysUIButton.swift; sourceTree = "<group>"; };
+		03907FDD276F092200CE3EFB /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		03907FE1276F0C8300CE3EFB /* AddWritingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddWritingViewController.storyboard; sourceTree = "<group>"; };
+		03907FE5276F0CBE00CE3EFB /* AddWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWritingViewController.swift; sourceTree = "<group>"; };
+		03C3AA9B279375FD00CA7FAF /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		03C3AA9F279405CC00CA7FAF /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +94,114 @@
 		03462021276C25BD00B2C315 /* doWriteRegularly */ = {
 			isa = PBXGroup;
 			children = (
+				0374DD222770565200216458 /* CustomControls */,
+				035F7D1F276D8840009BD9FC /* Resources */,
+				035F7D1B276D8641009BD9FC /* Extensions */,
+				03462099276C7BDC00B2C315 /* Views */,
+				0346208D276C6F8700B2C315 /* Model */,
 				03462022276C25BD00B2C315 /* AppDelegate.swift */,
 				03462024276C25BD00B2C315 /* SceneDelegate.swift */,
-				03462026276C25BD00B2C315 /* ViewController.swift */,
-				03462028276C25BD00B2C315 /* Main.storyboard */,
 				0346202E276C25C300B2C315 /* Assets.xcassets */,
 				03462030276C25C300B2C315 /* LaunchScreen.storyboard */,
 				03462033276C25C300B2C315 /* Info.plist */,
 				0346202B276C25BD00B2C315 /* doWriteRegularly.xcdatamodeld */,
 			);
 			path = doWriteRegularly;
+			sourceTree = "<group>";
+		};
+		0346208D276C6F8700B2C315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03462095276C713C00B2C315 /* Data.swift */,
+				0346208E276C6FAB00B2C315 /* Writing */,
+				03C3AA9E2794050D00CA7FAF /* Note */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0346208E276C6FAB00B2C315 /* Writing */ = {
+			isa = PBXGroup;
+			children = (
+				0346208F276C6FC100B2C315 /* WritingModel.swift */,
+				03462092276C6FCD00B2C315 /* WritingFunction.swift */,
+			);
+			path = Writing;
+			sourceTree = "<group>";
+		};
+		03462099276C7BDC00B2C315 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03C3AA9A279375D700CA7FAF /* NotesViewController */,
+				03907FE4276F0C9000CE3EFB /* AddWritingViewController */,
+				0346209A276C7BE400B2C315 /* WritingViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0346209A276C7BE400B2C315 /* WritingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0346209E276C7C0B00B2C315 /* WritingViewController.storyboard */,
+				0346209B276C7BFF00B2C315 /* WritingViewController.swift */,
+				034620A6276C858E00B2C315 /* WritingTableViewCell.swift */,
+			);
+			path = WritingViewController;
+			sourceTree = "<group>";
+		};
+		035F7D1B276D8641009BD9FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				035F7D1C276D867D009BD9FC /* UIViewExtensions.swift */,
+				03907FDD276F092200CE3EFB /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		035F7D1F276D8840009BD9FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				035F7D20276D8862009BD9FC /* Theme.swift */,
+				035F7D25276D896F009BD9FC /* BinggraeSamanco-Bold.otf */,
+				035F7D23276D896E009BD9FC /* BinggraeSamanco-Bold.ttf */,
+				035F7D24276D896F009BD9FC /* BinggraeSamanco.otf */,
+				035F7D26276D8970009BD9FC /* BinggraeSamanco.ttf */,
+				035F7D2C276D8E81009BD9FC /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0374DD222770565200216458 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				0374DD232770566A00216458 /* AppUIButton.swift */,
+				0374DD262770585B00216458 /* selectDaysUIButton.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		03907FE4276F0C9000CE3EFB /* AddWritingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03907FE1276F0C8300CE3EFB /* AddWritingViewController.storyboard */,
+				03907FE5276F0CBE00CE3EFB /* AddWritingViewController.swift */,
+			);
+			path = AddWritingViewController;
+			sourceTree = "<group>";
+		};
+		03C3AA9A279375D700CA7FAF /* NotesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03C3AA9B279375FD00CA7FAF /* NotesViewController.swift */,
+			);
+			path = NotesViewController;
+			sourceTree = "<group>";
+		};
+		03C3AA9E2794050D00CA7FAF /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				03C3AA9F279405CC00CA7FAF /* NoteModel.swift */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +261,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03907FE2276F0C8300CE3EFB /* AddWritingViewController.storyboard in Resources */,
+				035F7D29276D8970009BD9FC /* BinggraeSamanco-Bold.otf in Resources */,
+				035F7D28276D8970009BD9FC /* BinggraeSamanco.otf in Resources */,
 				03462032276C25C300B2C315 /* LaunchScreen.storyboard in Resources */,
+				035F7D2A276D8970009BD9FC /* BinggraeSamanco.ttf in Resources */,
+				0346209F276C7C0B00B2C315 /* WritingViewController.storyboard in Resources */,
+				035F7D2D276D8E81009BD9FC /* Colors.xcassets in Resources */,
 				0346202F276C25C300B2C315 /* Assets.xcassets in Resources */,
-				0346202A276C25BD00B2C315 /* Main.storyboard in Resources */,
+				035F7D27276D8970009BD9FC /* BinggraeSamanco-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +280,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03462027276C25BD00B2C315 /* ViewController.swift in Sources */,
 				03462023276C25BD00B2C315 /* AppDelegate.swift in Sources */,
+				03C3AAA0279405CD00CA7FAF /* NoteModel.swift in Sources */,
+				0346209C276C7BFF00B2C315 /* WritingViewController.swift in Sources */,
+				03462096276C713C00B2C315 /* Data.swift in Sources */,
+				03462093276C6FCD00B2C315 /* WritingFunction.swift in Sources */,
+				034620A7276C858E00B2C315 /* WritingTableViewCell.swift in Sources */,
+				03907FDE276F092200CE3EFB /* UIButtonExtension.swift in Sources */,
+				0374DD242770566A00216458 /* AppUIButton.swift in Sources */,
 				0346202D276C25BD00B2C315 /* doWriteRegularly.xcdatamodeld in Sources */,
+				03462090276C6FC100B2C315 /* WritingModel.swift in Sources */,
+				035F7D21276D8862009BD9FC /* Theme.swift in Sources */,
+				0374DD272770585B00216458 /* selectDaysUIButton.swift in Sources */,
+				03C3AA9C279375FD00CA7FAF /* NotesViewController.swift in Sources */,
+				03907FE6276F0CBE00CE3EFB /* AddWritingViewController.swift in Sources */,
+				035F7D1D276D867E009BD9FC /* UIViewExtensions.swift in Sources */,
 				03462025276C25BD00B2C315 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +302,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03462028276C25BD00B2C315 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03462029276C25BD00B2C315 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03462030276C25C300B2C315 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,6 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = doWriteRegularly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = practice.doWriteRegularly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = doWriteRegularly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = practice.doWriteRegularly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
