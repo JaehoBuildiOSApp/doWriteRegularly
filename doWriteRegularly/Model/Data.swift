@@ -8,10 +8,13 @@
 //           글쓰기 목표: WritingModel
 //           목표에 대한 글쓰기: NoteModel
 //3 해야할 것: realm 사용해서 데이터 관리
+//4 git
 
 
 import Foundation
 
 class Data {
     static var writingModels = [WritingModel]()
+
+
 }

@@ -18,8 +18,6 @@ class selectDaysUIButton: UIButton {
         titleLabel?.font = UIFont(name: Theme.mainBoldFontName, size: 30)
         layer.shadowOpacity = 1
         layer.shadowOffset = CGSize.zero
-        layer.shadowColor = UIColor.darkGray.cgColor
-        
-
+//        layer.shadowColor = UIColor.darkGray.cgColor
     }
 }

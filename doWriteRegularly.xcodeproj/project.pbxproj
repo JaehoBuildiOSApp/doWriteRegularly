@@ -30,6 +30,10 @@
 		03907FDE276F092200CE3EFB /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03907FDD276F092200CE3EFB /* UIButtonExtension.swift */; };
 		03907FE2276F0C8300CE3EFB /* AddWritingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03907FE1276F0C8300CE3EFB /* AddWritingViewController.storyboard */; };
 		03907FE6276F0CBE00CE3EFB /* AddWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03907FE5276F0CBE00CE3EFB /* AddWritingViewController.swift */; };
+		03BB39AA27AD4536001AF1FA /* WritingsListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB39A927AD4536001AF1FA /* WritingsListStoryboard.storyboard */; };
+		03BB39AE27AD4599001AF1FA /* WritingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB39AD27AD4599001AF1FA /* WritingsListViewController.swift */; };
+		03BB39B127AD4688001AF1FA /* WritingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB39B027AD4688001AF1FA /* WritingsStoryboard.storyboard */; };
+		03BB39B327AD4693001AF1FA /* WritingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB39B227AD4693001AF1FA /* WritingsViewController.swift */; };
 		03C3AA9C279375FD00CA7FAF /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3AA9B279375FD00CA7FAF /* NotesViewController.swift */; };
 		03C3AAA0279405CD00CA7FAF /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3AA9F279405CC00CA7FAF /* NoteModel.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +64,10 @@
 		03907FDD276F092200CE3EFB /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		03907FE1276F0C8300CE3EFB /* AddWritingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddWritingViewController.storyboard; sourceTree = "<group>"; };
 		03907FE5276F0CBE00CE3EFB /* AddWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWritingViewController.swift; sourceTree = "<group>"; };
+		03BB39A927AD4536001AF1FA /* WritingsListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WritingsListStoryboard.storyboard; sourceTree = "<group>"; };
+		03BB39AD27AD4599001AF1FA /* WritingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingsListViewController.swift; sourceTree = "<group>"; };
+		03BB39B027AD4688001AF1FA /* WritingsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WritingsStoryboard.storyboard; sourceTree = "<group>"; };
+		03BB39B227AD4693001AF1FA /* WritingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingsViewController.swift; sourceTree = "<group>"; };
 		03C3AA9B279375FD00CA7FAF /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		03C3AA9F279405CC00CA7FAF /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,21 +139,24 @@
 		03462099276C7BDC00B2C315 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				03BB39A727AD4490001AF1FA /* New Group */,
 				03C3AA9A279375D700CA7FAF /* NotesViewController */,
 				03907FE4276F0C9000CE3EFB /* AddWritingViewController */,
-				0346209A276C7BE400B2C315 /* WritingViewController */,
+				0346209A276C7BE400B2C315 /* WritingGoalViewController */,
+				03BB39A827AD4507001AF1FA /* WritingsListViewController */,
+				03BB39AF27AD463D001AF1FA /* WritingsVeiwController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0346209A276C7BE400B2C315 /* WritingViewController */ = {
+		0346209A276C7BE400B2C315 /* WritingGoalViewController */ = {
 			isa = PBXGroup;
 			children = (
 				0346209E276C7C0B00B2C315 /* WritingViewController.storyboard */,
 				0346209B276C7BFF00B2C315 /* WritingViewController.swift */,
 				034620A6276C858E00B2C315 /* WritingTableViewCell.swift */,
 			);
-			path = WritingViewController;
+			path = WritingGoalViewController;
 			sourceTree = "<group>";
 		};
 		035F7D1B276D8641009BD9FC /* Extensions */ = {
@@ -186,6 +197,31 @@
 				03907FE5276F0CBE00CE3EFB /* AddWritingViewController.swift */,
 			);
 			path = AddWritingViewController;
+			sourceTree = "<group>";
+		};
+		03BB39A727AD4490001AF1FA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		03BB39A827AD4507001AF1FA /* WritingsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03BB39A927AD4536001AF1FA /* WritingsListStoryboard.storyboard */,
+				03BB39AD27AD4599001AF1FA /* WritingsListViewController.swift */,
+			);
+			path = WritingsListViewController;
+			sourceTree = "<group>";
+		};
+		03BB39AF27AD463D001AF1FA /* WritingsVeiwController */ = {
+			isa = PBXGroup;
+			children = (
+				03BB39B027AD4688001AF1FA /* WritingsStoryboard.storyboard */,
+				03BB39B227AD4693001AF1FA /* WritingsViewController.swift */,
+			);
+			path = WritingsVeiwController;
 			sourceTree = "<group>";
 		};
 		03C3AA9A279375D700CA7FAF /* NotesViewController */ = {
@@ -265,6 +301,8 @@
 				035F7D29276D8970009BD9FC /* BinggraeSamanco-Bold.otf in Resources */,
 				035F7D28276D8970009BD9FC /* BinggraeSamanco.otf in Resources */,
 				03462032276C25C300B2C315 /* LaunchScreen.storyboard in Resources */,
+				03BB39B127AD4688001AF1FA /* WritingsStoryboard.storyboard in Resources */,
+				03BB39AA27AD4536001AF1FA /* WritingsListStoryboard.storyboard in Resources */,
 				035F7D2A276D8970009BD9FC /* BinggraeSamanco.ttf in Resources */,
 				0346209F276C7C0B00B2C315 /* WritingViewController.storyboard in Resources */,
 				035F7D2D276D8E81009BD9FC /* Colors.xcassets in Resources */,
@@ -281,12 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03462023276C25BD00B2C315 /* AppDelegate.swift in Sources */,
+				03BB39B327AD4693001AF1FA /* WritingsViewController.swift in Sources */,
 				03C3AAA0279405CD00CA7FAF /* NoteModel.swift in Sources */,
 				0346209C276C7BFF00B2C315 /* WritingViewController.swift in Sources */,
 				03462096276C713C00B2C315 /* Data.swift in Sources */,
 				03462093276C6FCD00B2C315 /* WritingFunction.swift in Sources */,
 				034620A7276C858E00B2C315 /* WritingTableViewCell.swift in Sources */,
 				03907FDE276F092200CE3EFB /* UIButtonExtension.swift in Sources */,
+				03BB39AE27AD4599001AF1FA /* WritingsListViewController.swift in Sources */,
 				0374DD242770566A00216458 /* AppUIButton.swift in Sources */,
 				0346202D276C25BD00B2C315 /* doWriteRegularly.xcdatamodeld in Sources */,
 				03462090276C6FC100B2C315 /* WritingModel.swift in Sources */,

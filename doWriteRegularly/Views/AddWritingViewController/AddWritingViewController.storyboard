@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kty-cc-oQe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Writing View Controller-->
+        <scene sceneID="V2V-NB-2gA">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="Kty-cc-oQe" customClass="AddWritingViewController" customModule="doWriteRegularly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ynI-Lz-C0F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHQ-RI-zrv">
+                                <rect key="frame" x="20" y="44" width="374" height="420"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글쓰기 목표 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIg-6P-7Qg">
+                                        <rect key="frame" x="15" y="20" width="344" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="nu7-Ie-XUK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qau-47-qef" customClass="AppUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="367" width="65" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="g7L-Rr-hOz"/>
+                                            <constraint firstAttribute="height" constant="38" id="w1O-TO-DtU"/>
+                                        </constraints>
+                                        <state key="normal" title="취소"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="Kty-cc-oQe" eventType="touchUpInside" id="gns-JY-FbN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글쓰기 요일 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-y0-dVZ">
+                                        <rect key="frame" x="15" y="136" width="344" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="PUl-Go-6pd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-7g-jSa">
+                                        <rect key="frame" x="15" y="178" width="344" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEU-N4-fwf" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="ZOr-df-M34"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="일"/>
+                                                <state key="selected">
+                                                    <color key="titleColor" name="Background"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="NFJ-Ta-GY2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-1z-HIX" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="44.5" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="m8T-4v-0gT"/>
+                                                </constraints>
+                                                <state key="normal" title="월"/>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="nF5-qb-Atg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NM-Fc-2Mc" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="99.5" y="0.0" width="45" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="SFf-aC-0te"/>
+                                                </constraints>
+                                                <state key="normal" title="화"/>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="xXj-kz-6mc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePj-Zw-IXu" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="149.5" y="0.0" width="45" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="obi-cS-YcR"/>
+                                                </constraints>
+                                                <state key="normal" title="수"/>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="SXv-ci-BO4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR7-XE-msK" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="199.5" y="0.0" width="45" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="d5j-Cw-JeL"/>
+                                                </constraints>
+                                                <state key="normal" title="목"/>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="S0J-Hg-GNU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56L-dQ-CxZ" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="249.5" y="0.0" width="44.5" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="Lb9-89-dDo"/>
+                                                </constraints>
+                                                <state key="normal" title="금"/>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="s3o-SK-xZg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpa-W1-k2j" customClass="selectDaysUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                                <rect key="frame" x="299" y="0.0" width="45" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="a9w-RF-KON"/>
+                                                </constraints>
+                                                <state key="normal" title="토"/>
+                                                <connections>
+                                                    <action selector="days:" destination="Kty-cc-oQe" eventType="touchUpInside" id="w8w-Er-E1h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="ZDI-Y3-rL6"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="일기, 소설, 시, 잡설 ... " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yie-2h-WfV">
+                                        <rect key="frame" x="15" y="62" width="344" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="FR5-CC-nRX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="글쓰기 시간 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbZ-Rc-SH1">
+                                        <rect key="frame" x="15" y="252" width="344" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="TN8-xX-UgK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9v-bM-Yok" customClass="AppUIButton" customModule="doWriteRegularly" customModuleProvider="target">
+                                        <rect key="frame" x="294" y="367" width="65" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="BxP-HY-jxh"/>
+                                            <constraint firstAttribute="height" constant="38" id="cDJ-DE-AFu"/>
+                                        </constraints>
+                                        <state key="normal" title="저장"/>
+                                        <connections>
+                                            <action selector="save:" destination="Kty-cc-oQe" eventType="touchUpInside" id="0jF-81-toD"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8VA-iY-nNN">
+                                        <rect key="frame" x="15" y="294" width="344" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="swo-dl-u2K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95070725679397583" green="0.93762862682342529" blue="0.80142098665237427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Moh-y0-dVZ" firstAttribute="top" secondItem="yie-2h-WfV" secondAttribute="bottom" constant="20" id="38m-nt-BVo"/>
+                                    <constraint firstAttribute="trailing" secondItem="8VA-iY-nNN" secondAttribute="trailing" constant="15" id="BYO-RL-4az"/>
+                                    <constraint firstItem="IIg-6P-7Qg" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="DF9-XE-fXr"/>
+                                    <constraint firstAttribute="trailing" secondItem="aYm-7g-jSa" secondAttribute="trailing" constant="15" id="EKY-Ii-BzL"/>
+                                    <constraint firstItem="IIg-6P-7Qg" firstAttribute="top" secondItem="rHQ-RI-zrv" secondAttribute="top" constant="20" id="HDW-cw-Wo9"/>
+                                    <constraint firstItem="yie-2h-WfV" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="IGl-wh-3Jp"/>
+                                    <constraint firstItem="8VA-iY-nNN" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="OmS-kr-AbN"/>
+                                    <constraint firstItem="8VA-iY-nNN" firstAttribute="top" secondItem="RbZ-Rc-SH1" secondAttribute="bottom" constant="10" id="S6V-ST-wTw"/>
+                                    <constraint firstAttribute="bottom" secondItem="f9v-bM-Yok" secondAttribute="bottom" constant="15" id="Sml-78-HBa"/>
+                                    <constraint firstItem="aYm-7g-jSa" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="VrY-hL-uwc"/>
+                                    <constraint firstItem="RbZ-Rc-SH1" firstAttribute="top" secondItem="aYm-7g-jSa" secondAttribute="bottom" constant="20" id="Xva-2w-kbC"/>
+                                    <constraint firstItem="yie-2h-WfV" firstAttribute="top" secondItem="IIg-6P-7Qg" secondAttribute="bottom" constant="10" id="Z7I-Tj-3yI"/>
+                                    <constraint firstAttribute="trailing" secondItem="IIg-6P-7Qg" secondAttribute="trailing" constant="15" id="cTE-H3-PfI"/>
+                                    <constraint firstAttribute="trailing" secondItem="RbZ-Rc-SH1" secondAttribute="trailing" constant="15" id="fIA-DV-U1v"/>
+                                    <constraint firstAttribute="trailing" secondItem="yie-2h-WfV" secondAttribute="trailing" constant="15" id="fUc-a4-ysR"/>
+                                    <constraint firstItem="RbZ-Rc-SH1" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="h2a-OT-Y80"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9v-bM-Yok" secondAttribute="trailing" constant="15" id="jQy-8M-8fA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qau-47-qef" secondAttribute="bottom" constant="15" id="kgq-sc-n5Y"/>
+                                    <constraint firstAttribute="height" constant="420" id="maT-O6-LkY"/>
+                                    <constraint firstItem="Qau-47-qef" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="nkD-ny-Hkd"/>
+                                    <constraint firstItem="aYm-7g-jSa" firstAttribute="top" secondItem="Moh-y0-dVZ" secondAttribute="bottom" constant="10" id="rym-Co-Kjo"/>
+                                    <constraint firstItem="Moh-y0-dVZ" firstAttribute="leading" secondItem="rHQ-RI-zrv" secondAttribute="leading" constant="15" id="uio-sF-vm3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Moh-y0-dVZ" secondAttribute="trailing" constant="15" id="w2f-hp-y7z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pm7-c4-9WO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rHQ-RI-zrv" firstAttribute="leading" secondItem="Pm7-c4-9WO" secondAttribute="leading" constant="20" id="4IE-Mt-aYd"/>
+                            <constraint firstItem="Pm7-c4-9WO" firstAttribute="trailing" secondItem="rHQ-RI-zrv" secondAttribute="trailing" constant="20" id="RNE-tB-Hqe"/>
+                            <constraint firstItem="rHQ-RI-zrv" firstAttribute="top" secondItem="Pm7-c4-9WO" secondAttribute="top" id="phY-bV-gdG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Qau-47-qef" id="cv8-pa-en0"/>
+                        <outlet property="dayLabel" destination="Moh-y0-dVZ" id="p5G-eo-J8O"/>
+                        <outlet property="popupView" destination="rHQ-RI-zrv" id="KXD-uk-Pvb"/>
+                        <outlet property="saveButton" destination="f9v-bM-Yok" id="kpN-yk-uBB"/>
+                        <outlet property="selectDays" destination="aYm-7g-jSa" id="fsb-Ln-lv6"/>
+                        <outlet property="timeField" destination="8VA-iY-nNN" id="8fe-0Y-B4O"/>
+                        <outlet property="timeLabel" destination="RbZ-Rc-SH1" id="CuZ-vO-tlv"/>
+                        <outlet property="titleLabel" destination="IIg-6P-7Qg" id="K3P-td-OKf"/>
+                        <outlet property="writingTextField" destination="yie-2h-WfV" id="p4T-2h-BWT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1a-FS-lM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="1" green="0.99199998378753662" blue="0.9779999852180481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

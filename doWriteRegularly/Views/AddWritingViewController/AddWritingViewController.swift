@@ -33,6 +33,39 @@ class AddWritingViewController: UIViewController, UITextFieldDelegate {
     var doneSaving: (()->())?
     var writingIndexToEdit: Int?
     
+    var days: [Int] = []
+    var daysString: [String] = []
+    
+    enum weekDays: Int {
+        case sunday = 0
+        case monday
+        case tuesday
+        case wednesday
+        case thursday
+        case friday
+        case saturday
+
+        
+        func description() -> String {
+            switch self {
+            case .sunday:
+                return "일"
+            case .monday:
+                return "월"
+            case .tuesday:
+                return "화"
+            case .wednesday:
+                return "수"
+            case .thursday:
+                return "목"
+            case .friday:
+                return "금"
+            case .saturday:
+                return "토"
+            }
+        }
+    }
+    
     public var completion: ((String, Date) -> Void)?
     
     let notificationCenter = UNUserNotificationCenter.current()
@@ -55,16 +88,12 @@ class AddWritingViewController: UIViewController, UITextFieldDelegate {
             
             let date = writing.alarmTime
             timeField.text = date
-//1            let date = writing.alarmTime1
-//1            let dateFormatter = DateFormatter()
-//1            dateFormatter.dateFormat = "hh:MM a"
-//1            timeField.text = dateFormatter.string(from: date)
         }
         
         let time = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ko")
-        dateFormatter.dateFormat = "hh:MM a"
+        dateFormatter.dateFormat = "a hh:MM"
         
         let timePicker = UIDatePicker()
         timePicker.datePickerMode = .time
@@ -83,7 +112,7 @@ class AddWritingViewController: UIViewController, UITextFieldDelegate {
     @objc func timePickerValueSelected(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ko")
-        dateFormatter.dateFormat = "hh:MM a"
+        dateFormatter.dateFormat = "a hh:MM"
         let timeChosen = dateFormatter.string(from: sender.date)
         timeField.text = timeChosen
 
@@ -91,8 +120,17 @@ class AddWritingViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func days(_ sender: UIButton) {
         
+        sender.isSelected = !sender.isSelected
+
+        //google, "How do I remove button selected state when clicked?"
+        if sender.isSelected {
+            sender.backgroundColor = UIColor.lightGray
+            days.append(sender.tag)
+        } else {
+            days = days.filter {$0 != sender.tag}
+            sender.backgroundColor = UIColor.white
+        }
     }
-    
     
     @IBAction func cancel(_ sender: UIButton) {
         dismiss(animated: true)
@@ -108,15 +146,23 @@ class AddWritingViewController: UIViewController, UITextFieldDelegate {
         }
         
         if let index = writingIndexToEdit {
-            WritingFunctions.updateWriting(at: index, title: newWritingName, alarmTime: timeField.text!)
-//1            WritingFunctions.updateWriting(at: index, title: newWritingName, alarmTime1: timeField)
+            
+            WritingFunctions.updateWriting(at: index, title: newWritingName, alarmTime: timeField.text!, alarmDay: days, alarmDayName: daysString)
+            print(days)
+            
         } else {
-            WritingFunctions.createWriting(writingModel: WritingModel(title: newWritingName, alarmTime: timeField.text!))
-//            WritingFunctions.createWriting(writingModel: WritingModel(title: newWritingName, alarmTime1: timeField))
+            
+            days.sort()
+            let dayDict = [0:"일", 1:"월", 2:"화", 3:"수", 4:"목", 5:"금", 6:"토"]
+            var currentDayNameArray: [String] = []
+            for i in days {
+                let temp = dayDict[i]
+                currentDayNameArray.append(temp!)
+            }
+            
+            WritingFunctions.createWriting(writingModel: WritingModel(title: newWritingName, alarmTime: timeField.text!, alarmDay: days, alarmDayName: currentDayNameArray))
+            print(days)
         }
-        
-        
-        let targetDate = UIDatePicker.self
         
         if let doneSaving = doneSaving {
             doneSaving()
@@ -131,5 +177,4 @@ class AddWritingViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
 }

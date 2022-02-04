@@ -11,14 +11,14 @@ class WritingModel {
     var id: UUID
     var title: String!
     var alarmTime: String!
-//1    var alarmTime1: Date
-//2    var noteModels = [NoteModel]()
+    var alarmDay: [Int] = []
+    var alarmDayName: [String] = []
     
-    init(title: String, alarmTime: String) {
-//1    init(title: String, alarmTime1: Date) {
+    init(title: String, alarmTime: String, alarmDay: [Int], alarmDayName: [String]) {
         id = UUID()
         self.title = title
         self.alarmTime = alarmTime
-//1        self.alarmTime1 = alarmTime1
+        self.alarmDay = alarmDay
+        self.alarmDayName = alarmDayName
     }
 }
